@@ -21,7 +21,6 @@ final class TaskListViewController: UITableViewController {
             target: self,
             action: #selector(addButtonPressed)
         )
-        print(UserDefaults.standard)
         navigationItem.rightBarButtonItem = addButton
         navigationItem.leftBarButtonItem = editButtonItem
         taskLists = storageManager.realm.objects(TaskList.self)
